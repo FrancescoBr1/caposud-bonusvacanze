@@ -482,7 +482,7 @@ h3 {
 }
 
 section {
-  margin-bottom: 14rem;
+  margin-bottom: 19rem;
 }
 
 .hero .container {
@@ -528,7 +528,7 @@ section {
   font-weight: 300;
   color: var(--meno-nero);
   text-transform: uppercase;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   position: relative;
 }
 
