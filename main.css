@@ -400,9 +400,9 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: "Poppins", serif;
+    font-family: "Raleway", serif;
     color: var(--quasi-nero);
-    font-weight: 700;
+    font-weight: 800;
 }
 
 p {
@@ -449,12 +449,15 @@ p {
   background-color: var(--giallo);
 }
 
-
 .strong {
-    font-weight: 700;
+    font-weight: 800;
 }
 
 /* inizio */
+
+main {
+  overflow: hidden;
+}
 
 h1 {
   font-size: 7.5rem;
@@ -469,6 +472,7 @@ h2 {
 
 h3 {
   font-size: 3.4rem;
+  font-weight: 400;
   margin-bottom: 2rem;
 }
 
@@ -490,7 +494,7 @@ section {
 }
 
 .hero-copy {
-  width: 70rem;
+    width: 70rem;
 }
 
 .hero-copy h1::before {
@@ -525,7 +529,6 @@ section {
 }
 
 .centro-item h3 {
-  font-weight: 300;
   color: var(--meno-nero);
   text-transform: uppercase;
   margin-bottom: 3rem;
@@ -560,4 +563,57 @@ section.bgr-blu p {
   margin-bottom: 5rem;
 }
 
+/* inizio media query */
 
+@media (max-width: 1500px) {
+
+  html {
+      font-size: 54%;
+  } 
+
+  .container {
+      padding: 0 5rem;
+  }
+
+}
+
+@media (max-width: 1040px) {
+
+  .container {
+      max-width: 110rem;
+  }
+
+  .hero-img {
+    right: -28rem;;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .container {
+      max-width: 100%;
+  }
+
+  .centro {
+    display: block;
+  }
+
+  .centro-item {
+    margin-bottom: 14rem;
+  }
+
+  .centro-item h3::before {
+    top: -4.5rem;
+    left: -3.5rem;
+  }
+
+}
+
+@media (max-width: 400px) {
+
+  html {
+    font-size: 50%;
+  }
+
+}
