@@ -626,8 +626,8 @@ section.bgr-blu p {
   }
 
   .centro-item h3::before {
-    top: -4.5rem;
-    left: -3.5rem;
+    top: -3.5rem;
+    left: -4.5rem;
   }
 
 }
@@ -650,6 +650,10 @@ section.bgr-blu p {
 
   h1 {
     font-size: 5rem;
+  }
+
+  .hero-copy h1::before {
+    display: none;
   }
 
   h2 {
