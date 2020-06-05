@@ -595,6 +595,28 @@ section.bgr-blu p {
       max-width: 100%;
   }
 
+  section {
+    margin-bottom: 13rem;
+  }
+
+  h1 {
+    font-size: 6.5rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  .hero-copy {
+    width: 100%;
+  }
+
+  .hero-img {
+    width: 48rem;
+    right: -17rem;
+    bottom: -1rem;
+  }
+
   .centro {
     display: block;
   }
@@ -610,10 +632,18 @@ section.bgr-blu p {
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
 
   html {
-    font-size: 50%;
+    font-size: 52%;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
   }
 
 }
