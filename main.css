@@ -388,6 +388,7 @@ body {
     --verde: #00E9BA;
     --bluverde: #00D7E9;
     --blu: #058AE8;
+    --bluscuro: #0082DF;
     --menoblu: #00BDFF;
     --radius: .3rem;
     --ombra-light: .1rem .1rem .2rem rgba(0, 0, 0, .15);
@@ -423,6 +424,10 @@ p {
 
 .clr-menoblu {
     color: var(--menoblu);
+}
+
+.clr-bluscuro {
+  color: var(--bluscuro);
 }
 
 .clr-verde {
@@ -556,12 +561,13 @@ section {
 .scrolldown {
     max-width: 38rem;
     text-align: center;
-    margin: 6rem auto;
+    margin: 8rem auto;
 }
 
 .scrolldown h4 {
   font-size: 3rem;
   font-weight: 600;
+  color: #0082DF;
 }
 
 .scrolldown i {
