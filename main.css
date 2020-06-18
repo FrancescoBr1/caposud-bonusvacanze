@@ -453,6 +453,28 @@ p {
     font-weight: 800;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
+/* animazioni */
+
+.bounce-7 {
+  animation-name: bounce-7;
+  animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+}
+
+@keyframes bounce-7 {
+  0%   { transform: scale(1,1)      translateY(0); }
+  7%  { transform: scale(1.1,.9)   translateY(0); }
+  18%  { transform: scale(.9,1.1)   translateY(-15px); }
+  30%  { transform: scale(1.05,.95) translateY(0); }
+  38%  { transform: scale(.95,1.05) translateY(-7px); }
+  46%  { transform: scale(1.05,.95) translateY(0); }
+  50% { transform: scale(1,1)      translateY(0); }
+  100% { transform: scale(1,1)      translateY(0); }
+}
+
 /* inizio */
 
 main {
@@ -480,6 +502,7 @@ h4 {
   font-size: 3rem;
   font-weight: 500;
   margin-bottom: 2rem;
+  line-height: normal;
 }
 
 .mainlogo img {
@@ -498,7 +521,7 @@ h4 {
 }
 
 section {
-  margin-bottom: 19rem;
+  margin-bottom: 18rem;
 }
 
 .hero .container {
@@ -526,19 +549,27 @@ section {
     width: 93rem;
     position: absolute;
     right: -5.5rem;
-    bottom: -4rem;
+    bottom: 5rem;
     z-index: -2;
 }
 
 .scrolldown {
     max-width: 38rem;
     text-align: center;
-    margin: 0 auto;
+    margin: 6rem auto;
 }
 
 .scrolldown h4 {
   font-size: 3rem;
   font-weight: 600;
+}
+
+.scrolldown i {
+  margin-top: 2rem;
+  font-size: 4rem;
+  animation-duration: 2.2s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
 }
 
 .centro {
