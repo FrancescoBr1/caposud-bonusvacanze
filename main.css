@@ -653,7 +653,6 @@ input, textarea, #btn-invia {
 
 input {
     background-color: white;
-    border: none;
     border-radius: .25rem;
     padding: 1.8rem;
     color: var(--quasi-nero);
@@ -663,7 +662,6 @@ input {
 textarea {
     background-color: white;
     padding: 1.8rem;
-    border: none;
     border-radius: .25rem;
     transition: .3s ease background-color;
 }
@@ -727,6 +725,9 @@ textarea:focus ~ label, textarea:valid  ~ label {
     right: -28rem;;
   }
 
+.centro2 h2 {
+  padding: 0;
+}
     
  .scrolldown {
   margin: 3.5rem auto;
@@ -809,5 +810,23 @@ textarea:focus ~ label, textarea:valid  ~ label {
   h2 {
     font-size: 3.5rem;
   }
+
+  .centro2 {
+    padding: 6rem 0;
+  }
+
+  .form {
+    width: 100%;
+    margin-top: 6rem;
+  }
+
+  input, textarea, #btn-invia {
+    width: 100%;
+  }
+
+  label {
+    left: 2rem;
+  }
+
 
 }
