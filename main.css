@@ -164,7 +164,6 @@
   textarea {
     font-family: inherit; /* 1 */
     font-size: 100%; /* 1 */
-    line-height: 1.15; /* 1 */
     margin: 0; /* 2 */
   }
   
@@ -380,6 +379,7 @@ html {
     --quasi-nero: #282828;
     --meno-nero: #444444;
     --giallo: #F9F871;
+    --giallino: #EEE8A9;
     --verdechiaro: #98F58A;
     --verde: #00E9BA;
     --bluverde: #00D7E9;
@@ -498,7 +498,7 @@ h1 {
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: 4.5rem;
   margin-bottom: 2rem;
 }
 
@@ -559,7 +559,7 @@ section {
     width: 93rem;
     position: absolute;
     right: -5.5rem;
-    bottom: 5rem;
+    bottom: 12rem;
     z-index: -2;
 }
 
@@ -589,7 +589,7 @@ section {
 }
 
 .centro-item {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .centro-item h3 {
@@ -611,6 +611,10 @@ section {
     border-radius: 5rem;
 }
 
+ul li {
+  margin-top: .7rem;
+}
+
 section.bgr-blu h1, 
 section.bgr-blu h2,
 section.bgr-blu h3,
@@ -625,6 +629,78 @@ section.bgr-blu p {
 .centro2 h2 {
   text-transform: uppercase;
   margin-bottom: 5rem;
+  padding: 0 20rem;
+}
+
+.form {
+  width: 60rem;
+  margin: 0 auto;
+  margin-top: 8rem;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+input, textarea, #btn-invia {
+  display: block;
+  border: none;
+  width: 50rem;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+
+input {
+    background-color: white;
+    border: none;
+    border-radius: .25rem;
+    padding: 1.8rem;
+    color: var(--quasi-nero);
+    transition: 0.3s ease all;
+}
+
+textarea {
+    background-color: white;
+    padding: 1.8rem;
+    border: none;
+    border-radius: .25rem;
+    transition: .3s ease background-color;
+}
+
+input:focus, textarea:focus { outline:none; }
+
+label {
+  position: absolute;
+  top: 1.9rem;
+  left: 7rem;
+  font-size: 2.2rem;
+  color: var(--meno-nero);
+  opacity: .8; 
+  pointer-events:none;
+  transition: 0.3s ease all;
+}
+
+input:focus, textarea:focus {
+  background-color: #BCF9ED;
+}
+
+input:focus ~ label, input:valid ~ label,
+textarea:focus ~ label, textarea:valid  ~ label {
+  top:-2.5rem;
+  font-size:1.7rem;
+  color: white;
+  opacity: 1;
+}
+
+#btn-invia {
+  cursor: pointer;
+  background-color: var(--giallino);
+  color: var(--meno-nero);
+  border-radius: .5rem;
+  padding: 1.8rem;
+  font-size: 2.4rem;
+  font-weight: 700;
 }
 
 /* inizio media query */
