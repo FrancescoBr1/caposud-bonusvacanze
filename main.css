@@ -371,10 +371,6 @@ html {
     margin: 0;
 }
 
-body {
-    font-family: "Open Sans", sans-serif;
-}
-
 /* root e altre fisse */
 
 :root {
@@ -394,6 +390,14 @@ body {
     --ombra-light: .1rem .1rem .2rem rgba(0, 0, 0, .15);
     --ombra-std: .2rem .1rem .7rem rgba(0, 0, 0, .20);
     --ombra-str: .2rem .1rem 1.85rem rgba(0, 0, 0, .25);
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
 h1,
