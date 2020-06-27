@@ -376,18 +376,18 @@ html {
     --quasi-bianco: #EEEEEE;
     --grigio-chiaro: #CCCCCC;
     --mezzo-grigio: #848484;
-    --meno-nero: #444444;
+    --meno-nero: #555555;
     --quasi-nero: #282828;
     --giallo: #F9F871;
     --giallino: #F3EFC4;
     --verdechiaro: #98F58A;
     --verde: #00E9BA;
-    --bluverde: #00D7E9;
+    --verdeblu: #7692BC;
     --blu: #058AE8;
     --bluscuro: #0082DF;
     --menoblu: #00BDFF;
 
-    --bradius: .3rem;
+    --bradius: .4rem;
 
     --ombra-light: .1rem .1rem .2rem rgba(0, 0, 0, .15);
     --ombra-std: .2rem .1rem .7rem rgba(0, 0, 0, .20);
@@ -409,7 +409,7 @@ h3,
 h4,
 h5 {
     font-family: "Raleway", serif;
-    color: var(--quasi-nero);
+    color: var(--meno-nero);
     font-weight: 800;
     line-height: normal;
 }
@@ -418,7 +418,7 @@ p {
     color: var(--meno-nero);
     font-weight: 400;
     line-height: 1.5;
-    font-size: 2.1rem;
+    font-size: 2rem;
 }
 
 .clr-white {
@@ -441,6 +441,10 @@ p {
     color: var(--verde)!important;
 }
 
+.clr-verdeblu {
+  color: var(--verdeblu)!important;
+}
+
 .clr-giallo {
     color: var(--giallo)!important;
 }
@@ -461,6 +465,14 @@ p {
   background-color: var(--blu)!important;
 }
 
+.bgr-verde {
+  background-color: var(--verde)!important;
+}
+
+.bgr-giallino {
+  background-color: var(--giallino)!important;
+}
+
 .bgr-giallo {
   background-color: var(--giallo)!important;
 }
@@ -472,6 +484,18 @@ p {
 
 .nowrap {
   white-space: nowrap;
+}
+
+.index-2 {
+  z-index: -2;
+}
+
+.index-3 {
+  z-index: -3;
+}
+
+.index-4 {
+  z-index: -4;
 }
 
 /* animazioni */
@@ -505,18 +529,18 @@ h1 {
 }
 
 h2 {
-  font-size: 4.5rem;
+  font-size: 5rem;
   margin-bottom: 2rem;
 }
 
 h3 {
-  font-size: 3.4rem;
+  font-size: 3.8rem;
   font-weight: 400;
   margin-bottom: 2rem;
 }
 
 h4 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 2rem;
   line-height: normal;
@@ -627,7 +651,7 @@ section {
 
 .centro-item h3::before {
     content: "";
-    background: var(--giallo);
+    background: var(--giallino);
     width: 8rem;
     height: 8rem;
     position: absolute;
@@ -647,6 +671,98 @@ section.bgr-blu h3,
 section.bgr-blu p {
    color: white;
 }
+
+/* sezione foto */
+
+.fotohcs .container > h2,
+.fotohcs .container > h4 {
+  text-align: center;
+  position: relative;
+}
+
+.fotohcs h2::before {
+    content: "";
+    background: var(--giallino);
+    width: 32rem;
+    height: 32rem;
+    position: absolute;
+    top: -10.5rem;
+    left: 3.5rem;
+    z-index: -1;
+    border-radius: 30rem;
+}
+
+.fotohcs h4 {
+  color: var(--mezzo-grigio);
+  margin-bottom: 15rem;
+}
+
+.fotohcs h3 {
+  font-weight: 700;
+}
+
+.img_std {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.foto-item {
+  display: grid;
+  grid-gap: 7rem;
+  grid-template-columns: 1.7fr 1fr;
+  grid-template-areas: "item-img item-copy";
+  height: 57rem;
+  margin: 0 auto;
+  margin-bottom: 7rem;
+}
+
+.foto-item_r {
+  grid-template-columns: 1fr 1.7fr;
+  grid-template-areas: "item-copy item-img"   ;
+}
+
+.foto-item img {
+  grid-area: item-img;
+  justify-self: center;
+  border-radius: var(--bradius);
+}
+
+.item-copy {
+  align-self: center;
+  position: relative;
+  padding: 2rem;
+  grid-area: item-copy;
+}
+
+.item-copy_deco {
+  height: 1rem;
+  width: 10rem;
+  margin-top: -.5rem;
+  margin-bottom: 3rem;
+  background-color: var(--blu);
+  border-radius: var(--bradius);
+  opacity: .5;
+}
+
+.item-cerchio {
+  position: absolute;
+  height: 20rem;
+  width: 20rem;
+  bottom: -23rem;
+  left: -23rem;
+  z-index: -1;
+  background-color: var(--verde);
+  border-radius: 15rem;
+}
+
+.item-cerchio2 {
+  bottom: -21rem;
+  left: 58rem;
+  background-color: var(--menoblu);
+}
+
+/* sezione con form */
 
 .centro2 {
   padding: 10rem 0;
