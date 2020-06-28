@@ -598,8 +598,8 @@ section {
     width: 27rem;
     height: 27rem;
     position: absolute;
-    top: -1.5rem;
-    left: -23rem;
+    top: -10.5rem;
+    left: -16rem;
     z-index: -1;
     opacity: .6;
     border-radius: 18rem;
@@ -714,7 +714,7 @@ section.bgr-blu p {
   grid-template-areas: "item-img item-copy";
   height: 57rem;
   margin: 0 auto;
-  margin-bottom: 7rem;
+  margin-bottom: 12rem;
 }
 
 .foto-item_r {
@@ -890,14 +890,27 @@ footer p {
     right: -28rem;;
   }
 
-.centro2 h2 {
-  padding: 0;
-}
-    
- .scrolldown {
-  margin: 3.5rem auto;
-}
+  .centro2 h2 {
+    padding: 0;
+  }
+      
+  .scrolldown {
+    margin: 3.5rem auto;
+  }
 
+  .fotohcs h2::before {
+    left: -13rem;
+    width: 26rem;
+    height: 26rem;
+  }
+
+  .foto-item {
+    height: 50rem;
+  }
+
+  .foto-item li {
+    font-size: 1.8rem;
+  }
 
 }
 
@@ -905,10 +918,7 @@ footer p {
 
   .container {
     max-width: 100%;
-  }
-
-  section {
-    margin-bottom: 13rem;
+    padding: 0 3rem;
   }
 
   h1 {
@@ -950,6 +960,10 @@ footer p {
     left: -4.5rem;
   }
 
+  .foto-item {
+    grid-gap: 4rem;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -961,6 +975,10 @@ footer p {
   .container {
     padding: 0 2rem;
  }
+
+  section {
+    margin-top: 11rem;
+  }
 
  .hero-img {
     width: 27rem;
@@ -987,6 +1005,16 @@ footer p {
 
   .centro2 {
     padding: 6rem 0;
+  }
+
+  .fotohcs h4 {
+    margin-bottom: 8rem;
+  }
+
+  .foto-item {
+    display: block;
+    height: auto;
+    margin-bottom: 7rem;
   }
 
   .form {
