@@ -376,7 +376,7 @@ html {
     --quasi-bianco: #EEEEEE;
     --grigio-chiaro: #CCCCCC;
     --mezzo-grigio: #848484;
-    --meno-nero: #555555;
+    --meno-nero: #494949;
     --quasi-nero: #282828;
     --giallo: #F9F871;
     --giallino: #F3EFC4;
@@ -682,12 +682,12 @@ section.bgr-blu p {
 
 .fotohcs h2::before {
     content: "";
-    background: var(--giallino);
+    background: var(--verde);
     width: 32rem;
     height: 32rem;
     position: absolute;
     top: -10.5rem;
-    left: 3.5rem;
+    left: 1rem;
     z-index: -1;
     border-radius: 30rem;
 }
